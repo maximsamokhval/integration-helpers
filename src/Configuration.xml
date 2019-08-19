@@ -124,8 +124,13 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>МаппингМетаданных</Subsystem>
+			<DefinedType>Число15_3</DefinedType>
 			<Catalog>_ДемоНоменклатура</Catalog>
+			<Catalog>_ДемоСклады</Catalog>
+			<Catalog>_ДемоПартнеры</Catalog>
+			<Document>_ДемоЗаказыПокупателя</Document>
 			<DataProcessor>МаппингДанных</DataProcessor>
+			<InformationRegister>_ДемоНоменклатураПартнера</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

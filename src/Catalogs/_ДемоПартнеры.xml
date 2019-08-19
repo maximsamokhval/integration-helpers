@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
-	<Catalog uuid="ae06d102-1307-4515-b0df-95baf6b619c0">
+	<Catalog uuid="c89309e1-61ed-4bed-b399-255a936ec338">
 		<InternalInfo>
-			<xr:GeneratedType name="CatalogObject._ДемоНоменклатура" category="Object">
-				<xr:TypeId>82f1f93e-3142-46c7-a547-8b03cfa3296a</xr:TypeId>
-				<xr:ValueId>851ec99e-c09a-4b4e-9cec-847a2ac0fa7b</xr:ValueId>
+			<xr:GeneratedType name="CatalogObject._ДемоПартнеры" category="Object">
+				<xr:TypeId>e3aea66f-73a7-456e-8e26-0bbd20126e8f</xr:TypeId>
+				<xr:ValueId>9c585804-3940-42ba-9805-40cd5b170ea9</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogRef._ДемоНоменклатура" category="Ref">
-				<xr:TypeId>c7a87c28-91ef-4973-a555-8404a8e9417b</xr:TypeId>
-				<xr:ValueId>0d339c0a-d173-420f-aa1c-8c515532b3cb</xr:ValueId>
+			<xr:GeneratedType name="CatalogRef._ДемоПартнеры" category="Ref">
+				<xr:TypeId>24e35028-ec23-4685-a56d-7db3395d2726</xr:TypeId>
+				<xr:ValueId>cf5def22-f514-420a-ae02-7a3d8562dbde</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogSelection._ДемоНоменклатура" category="Selection">
-				<xr:TypeId>c9f05bad-8b16-4eb3-9ade-f774164d33de</xr:TypeId>
-				<xr:ValueId>093be0d5-3378-4433-968d-bf644bfb27fe</xr:ValueId>
+			<xr:GeneratedType name="CatalogSelection._ДемоПартнеры" category="Selection">
+				<xr:TypeId>f0f9e862-bcb4-4ef8-93dc-2524300a414a</xr:TypeId>
+				<xr:ValueId>9f6f2263-37a8-43c2-b04c-b3407da65507</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogList._ДемоНоменклатура" category="List">
-				<xr:TypeId>ac87986f-c697-4dd2-a66a-0ed66b1a0ce7</xr:TypeId>
-				<xr:ValueId>c0516c12-be7b-415b-b7a3-2cdd7bda2f60</xr:ValueId>
+			<xr:GeneratedType name="CatalogList._ДемоПартнеры" category="List">
+				<xr:TypeId>b5bb209b-4a0e-4033-8a2d-6519f680be5a</xr:TypeId>
+				<xr:ValueId>e779335c-2a05-4e13-87fd-9b2117123595</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogManager._ДемоНоменклатура" category="Manager">
-				<xr:TypeId>266b35ae-8383-4649-ae7a-a5cdb2b545f6</xr:TypeId>
-				<xr:ValueId>b37489ad-4452-4528-9e70-f6856fe27058</xr:ValueId>
+			<xr:GeneratedType name="CatalogManager._ДемоПартнеры" category="Manager">
+				<xr:TypeId>bc94ccb3-f0b2-465d-9c84-95e519af3bb4</xr:TypeId>
+				<xr:ValueId>88f0e5c9-2a07-468e-bb74-f2f3e89eb33c</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>_ДемоНоменклатура</Name>
+			<Name>_ДемоПартнеры</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Демо номенклатура</v8:content>
+					<v8:content>Демо партнеры</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -54,8 +54,8 @@
 			<QuickChoice>false</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
 			<InputByString>
-				<xr:Field>Catalog._ДемоНоменклатура.StandardAttribute.Description</xr:Field>
-				<xr:Field>Catalog._ДемоНоменклатура.StandardAttribute.Code</xr:Field>
+				<xr:Field>Catalog._ДемоПартнеры.StandardAttribute.Description</xr:Field>
+				<xr:Field>Catalog._ДемоПартнеры.StandardAttribute.Code</xr:Field>
 			</InputByString>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
@@ -83,50 +83,6 @@
 			<CreateOnInput>Use</CreateOnInput>
 			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 		</Properties>
-		<ChildObjects>
-			<Attribute uuid="a0226f45-e724-4b0d-87ad-1cdc288db433">
-				<Properties>
-					<Name>Артикул</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Артикул </v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment>(Общ) Код производителя</Comment>
-					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>25</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Use>ForItem</Use>
-					<Indexing>Index</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-				</Properties>
-			</Attribute>
-		</ChildObjects>
+		<ChildObjects/>
 	</Catalog>
 </MetaDataObject>
