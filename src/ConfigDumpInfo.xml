@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.4">
 	<ConfigVersions>
-		<Metadata name="Catalog._ДемоНоменклатура" id="ae06d102-1307-4515-b0df-95baf6b619c0" configVersion="ec54fd212097894681783aa41aab7ab200000000"/>
+		<Metadata name="Catalog._ДемоНоменклатура" id="ae06d102-1307-4515-b0df-95baf6b619c0" configVersion="065995edec0d6b4dbb4c79a083e7c74f00000000"/>
 		<Metadata name="Configuration.ПомощникИнтеграции" id="f8e6e415-edf3-4df2-a0ab-60862255a493" configVersion="47616a3aa3603f4081f26d263f1401b400000000"/>
-		<Metadata name="DataProcessor.МаппингДанных" id="39090677-e7f0-45aa-a9d1-f8d1d908d0b0" configVersion="dd82d29ebbf7d44aad308a1c35a3eca900000000">
+		<Metadata name="DataProcessor.МаппингДанных" id="39090677-e7f0-45aa-a9d1-f8d1d908d0b0" configVersion="7f1d7f86b4d029418cf45e55167a7d2300000000">
 			<Metadata name="DataProcessor.МаппингДанных.Attribute.ОбъектыМетаданных" id="a7b0f048-6e93-4129-9020-75fdaf2ac8a9"/>
 		</Metadata>
+		<Metadata name="DataProcessor.МаппингДанных.Form.Форма" id="0702a050-1a0f-4224-ac99-294f07afb2e2" configVersion="7aa9e7ae9dc6fb43af06bc55f3c03e2700000000"/>
+		<Metadata name="DataProcessor.МаппингДанных.Form.Форма.Form" id="0702a050-1a0f-4224-ac99-294f07afb2e2.0" configVersion="e3e15184e7727243972bb4aca3db626b00000000"/>
 		<Metadata name="DataProcessor.МаппингДанных.ObjectModule" id="39090677-e7f0-45aa-a9d1-f8d1d908d0b0.0" configVersion="596b07eca75060418d88b0cf979e672100000000"/>
 		<Metadata name="Language.Русский" id="a4794e23-8f63-4687-9d5e-5a956568697f" configVersion="93504117f6cb8945a9cd13cd4ca72d6500000000"/>
 		<Metadata name="Subsystem.МаппингМетаданных" id="e8bdd318-5ec7-404e-bc77-da39db2aa4f2" configVersion="8f02af86b9991741a56ee4c5afedc20a00000000"/>
