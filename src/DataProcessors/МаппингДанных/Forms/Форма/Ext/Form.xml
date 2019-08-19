@@ -1,6 +1,90 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ВыбратьОбъект" id="1">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<OnlyInAllActions>true</OnlyInAllActions>
+				<CommandName>Form.Command.ВыбратьОбъект</CommandName>
+				<ExtendedTooltip name="ВыбратьОбъектРасширеннаяПодсказка" id="2"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Синоним" id="3">
+			<DataPath>ОбъектКонфигурации</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="СинонимКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="СинонимРасширеннаяПодсказка" id="5"/>
+		</InputField>
+		<Table name="РеквизитыОбъекта" id="6">
+			<Representation>List</Representation>
+			<ReadOnly>true</ReadOnly>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>РеквизитыОбъекта</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="РеквизитыОбъектаКонтекстноеМеню" id="7"/>
+			<AutoCommandBar name="РеквизитыОбъектаКоманднаяПанель" id="8"/>
+			<ExtendedTooltip name="РеквизитыОбъектаРасширеннаяПодсказка" id="9"/>
+			<SearchStringAddition name="РеквизитыОбъектаСтрокаПоиска" id="10">
+				<AdditionSource>
+					<Item>РеквизитыОбъекта</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РеквизитыОбъектаСтрокаПоискаКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="РеквизитыОбъектаСтрокаПоискаРасширеннаяПодсказка" id="12"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="РеквизитыОбъектаСостояниеПросмотра" id="13">
+				<AdditionSource>
+					<Item>РеквизитыОбъекта</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РеквизитыОбъектаСостояниеПросмотраКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="РеквизитыОбъектаСостояниеПросмотраРасширеннаяПодсказка" id="15"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="РеквизитыОбъектаУправлениеПоиском" id="16">
+				<AdditionSource>
+					<Item>РеквизитыОбъекта</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="РеквизитыОбъектаУправлениеПоискомКонтекстноеМеню" id="17"/>
+				<ExtendedTooltip name="РеквизитыОбъектаУправлениеПоискомРасширеннаяПодсказка" id="18"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="РеквизитыОбъектаИмя" id="19">
+					<DataPath>РеквизитыОбъекта.Имя</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="РеквизитыОбъектаИмяКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="РеквизитыОбъектаИмяРасширеннаяПодсказка" id="21"/>
+				</InputField>
+				<InputField name="РеквизитыОбъектаСиноним" id="22">
+					<DataPath>РеквизитыОбъекта.Синоним</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="РеквизитыОбъектаСинонимКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="РеквизитыОбъектаСинонимРасширеннаяПодсказка" id="24"/>
+				</InputField>
+				<InputField name="РеквизитыОбъектаТипСтрокой" id="25">
+					<DataPath>РеквизитыОбъекта.Тип</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип (строкой)</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="РеквизитыОбъектаТипСтрокойКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="РеквизитыОбъектаТипСтрокойРасширеннаяПодсказка" id="27"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>
@@ -8,5 +92,120 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 		</Attribute>
+		<Attribute name="РезультатВыбора" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат выбора</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ОбъектКонфигурации" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект конфигурации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РеквизитыОбъекта" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реквизиты объекта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Имя" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Синоним" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Синоним</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Тип" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип строкой</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Обязательный" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обязательный</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ВыбратьОбъект" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать объект</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать объект</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Select</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыбратьОбъект</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
 </Form>

@@ -61,6 +61,7 @@
 				</Properties>
 			</Attribute>
 			<Form>Форма</Form>
+			<Form>ВыборОбъектаМетаданных</Form>
 		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>

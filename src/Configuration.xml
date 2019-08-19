@@ -130,6 +130,7 @@
 			<Catalog>_ДемоПартнеры</Catalog>
 			<Document>_ДемоЗаказыПокупателя</Document>
 			<DataProcessor>МаппингДанных</DataProcessor>
+			<InformationRegister>_ДемоНоменклатураПартнера</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
