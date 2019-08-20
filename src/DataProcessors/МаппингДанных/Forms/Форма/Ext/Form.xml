@@ -9,6 +9,11 @@
 				<CommandName>Form.Command.ВыбратьОбъект</CommandName>
 				<ExtendedTooltip name="ВыбратьОбъектРасширеннаяПодсказка" id="2"/>
 			</Button>
+			<Button name="ФормаОписаниеВнешнейТаблицы" id="30">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОписаниеВнешнейТаблицы</CommandName>
+				<ExtendedTooltip name="ФормаОписаниеВнешнейТаблицыРасширеннаяПодсказка" id="31"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -21,69 +26,96 @@
 			<ContextMenu name="СинонимКонтекстноеМеню" id="4"/>
 			<ExtendedTooltip name="СинонимРасширеннаяПодсказка" id="5"/>
 		</InputField>
-		<Table name="РеквизитыОбъекта" id="6">
-			<Representation>List</Representation>
-			<ReadOnly>true</ReadOnly>
-			<AutoInsertNewRow>true</AutoInsertNewRow>
-			<EnableStartDrag>true</EnableStartDrag>
-			<EnableDrag>true</EnableDrag>
-			<DataPath>РеквизитыОбъекта</DataPath>
-			<RowFilter xsi:nil="true"/>
-			<ContextMenu name="РеквизитыОбъектаКонтекстноеМеню" id="7"/>
-			<AutoCommandBar name="РеквизитыОбъектаКоманднаяПанель" id="8"/>
-			<ExtendedTooltip name="РеквизитыОбъектаРасширеннаяПодсказка" id="9"/>
-			<SearchStringAddition name="РеквизитыОбъектаСтрокаПоиска" id="10">
-				<AdditionSource>
-					<Item>РеквизитыОбъекта</Item>
-					<Type>SearchStringRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="РеквизитыОбъектаСтрокаПоискаКонтекстноеМеню" id="11"/>
-				<ExtendedTooltip name="РеквизитыОбъектаСтрокаПоискаРасширеннаяПодсказка" id="12"/>
-			</SearchStringAddition>
-			<ViewStatusAddition name="РеквизитыОбъектаСостояниеПросмотра" id="13">
-				<AdditionSource>
-					<Item>РеквизитыОбъекта</Item>
-					<Type>ViewStatusRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="РеквизитыОбъектаСостояниеПросмотраКонтекстноеМеню" id="14"/>
-				<ExtendedTooltip name="РеквизитыОбъектаСостояниеПросмотраРасширеннаяПодсказка" id="15"/>
-			</ViewStatusAddition>
-			<SearchControlAddition name="РеквизитыОбъектаУправлениеПоиском" id="16">
-				<AdditionSource>
-					<Item>РеквизитыОбъекта</Item>
-					<Type>SearchControl</Type>
-				</AdditionSource>
-				<ContextMenu name="РеквизитыОбъектаУправлениеПоискомКонтекстноеМеню" id="17"/>
-				<ExtendedTooltip name="РеквизитыОбъектаУправлениеПоискомРасширеннаяПодсказка" id="18"/>
-			</SearchControlAddition>
+		<UsualGroup name="ГруппаРеквизитыОбъектаМетаданных" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реквизиты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа реквизиты объекта метаданных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаРеквизитыОбъектаМетаданныхРасширеннаяПодсказка" id="29"/>
 			<ChildItems>
-				<InputField name="РеквизитыОбъектаИмя" id="19">
-					<DataPath>РеквизитыОбъекта.Имя</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="РеквизитыОбъектаИмяКонтекстноеМеню" id="20"/>
-					<ExtendedTooltip name="РеквизитыОбъектаИмяРасширеннаяПодсказка" id="21"/>
-				</InputField>
-				<InputField name="РеквизитыОбъектаСиноним" id="22">
-					<DataPath>РеквизитыОбъекта.Синоним</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="РеквизитыОбъектаСинонимКонтекстноеМеню" id="23"/>
-					<ExtendedTooltip name="РеквизитыОбъектаСинонимРасширеннаяПодсказка" id="24"/>
-				</InputField>
-				<InputField name="РеквизитыОбъектаТипСтрокой" id="25">
-					<DataPath>РеквизитыОбъекта.Тип</DataPath>
+				<Table name="РеквизитыОбъекта" id="6">
+					<Representation>List</Representation>
+					<ReadOnly>true</ReadOnly>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>РеквизитыОбъекта</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Тип (строкой)</v8:content>
+							<v8:content>Приемник данных</v8:content>
 						</v8:item>
 					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<MultiLine>true</MultiLine>
-					<ContextMenu name="РеквизитыОбъектаТипСтрокойКонтекстноеМеню" id="26"/>
-					<ExtendedTooltip name="РеквизитыОбъектаТипСтрокойРасширеннаяПодсказка" id="27"/>
-				</InputField>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="РеквизитыОбъектаКонтекстноеМеню" id="7"/>
+					<AutoCommandBar name="РеквизитыОбъектаКоманднаяПанель" id="8">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="РеквизитыОбъектаРасширеннаяПодсказка" id="9"/>
+					<SearchStringAddition name="РеквизитыОбъектаСтрокаПоиска" id="10">
+						<AdditionSource>
+							<Item>РеквизитыОбъекта</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="РеквизитыОбъектаСтрокаПоискаКонтекстноеМеню" id="11"/>
+						<ExtendedTooltip name="РеквизитыОбъектаСтрокаПоискаРасширеннаяПодсказка" id="12"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="РеквизитыОбъектаСостояниеПросмотра" id="13">
+						<AdditionSource>
+							<Item>РеквизитыОбъекта</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="РеквизитыОбъектаСостояниеПросмотраКонтекстноеМеню" id="14"/>
+						<ExtendedTooltip name="РеквизитыОбъектаСостояниеПросмотраРасширеннаяПодсказка" id="15"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="РеквизитыОбъектаУправлениеПоиском" id="16">
+						<AdditionSource>
+							<Item>РеквизитыОбъекта</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="РеквизитыОбъектаУправлениеПоискомКонтекстноеМеню" id="17"/>
+						<ExtendedTooltip name="РеквизитыОбъектаУправлениеПоискомРасширеннаяПодсказка" id="18"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="РеквизитыОбъектаИмя" id="19">
+							<DataPath>РеквизитыОбъекта.Имя</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="РеквизитыОбъектаИмяКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="РеквизитыОбъектаИмяРасширеннаяПодсказка" id="21"/>
+						</InputField>
+						<InputField name="РеквизитыОбъектаСиноним" id="22">
+							<DataPath>РеквизитыОбъекта.Синоним</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="РеквизитыОбъектаСинонимКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="РеквизитыОбъектаСинонимРасширеннаяПодсказка" id="24"/>
+						</InputField>
+						<InputField name="РеквизитыОбъектаТипСтрокой" id="25">
+							<DataPath>РеквизитыОбъекта.Тип</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тип (строкой)</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="РеквизитыОбъектаТипСтрокойКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="РеквизитыОбъектаТипСтрокойРасширеннаяПодсказка" id="27"/>
+						</InputField>
+					</ChildItems>
+				</Table>
 			</ChildItems>
-		</Table>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -206,6 +238,21 @@
 			</Picture>
 			<Action>ВыбратьОбъект</Action>
 			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОписаниеВнешнейТаблицы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание внешней таблицы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание внешней таблицы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОписаниеВнешнейТаблицы</Action>
 		</Command>
 	</Commands>
 </Form>

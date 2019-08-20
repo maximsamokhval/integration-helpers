@@ -8,16 +8,19 @@
 		<Metadata name="Catalog._ДемоПартнеры" id="c89309e1-61ed-4bed-b399-255a936ec338" configVersion="e9eacea512c8154eb1fa4959bd908bce00000000"/>
 		<Metadata name="Catalog._ДемоСклады" id="7e043eb3-20ec-4670-a418-ca99c0d1894c" configVersion="56b3468858066e4e9fbca828fe6639b500000000"/>
 		<Metadata name="Configuration.ПомощникИнтеграции" id="f8e6e415-edf3-4df2-a0ab-60862255a493" configVersion="1993564b3175014c864d70b6dc12eecf00000000"/>
-		<Metadata name="DataProcessor.МаппингДанных" id="39090677-e7f0-45aa-a9d1-f8d1d908d0b0" configVersion="9653e23faf2b4446b0487ba24700d44a00000000">
+		<Metadata name="DataProcessor.МаппингДанных" id="39090677-e7f0-45aa-a9d1-f8d1d908d0b0" configVersion="572c7784da7a6e4bbd7e1bc28347180000000000">
 			<Metadata name="DataProcessor.МаппингДанных.Attribute.ОбъектыМетаданных" id="a7b0f048-6e93-4129-9020-75fdaf2ac8a9"/>
+			<Metadata name="DataProcessor.МаппингДанных.Attribute.ДоступныеТипыДанных" id="ec61e6b0-f801-40e1-ad4f-52f1ece1c8d3"/>
 		</Metadata>
 		<Metadata name="DataProcessor.МаппингДанных.Form.ВыборОбъектаМетаданных" id="9376b288-d475-410f-b150-641323890ac8" configVersion="7c02f82424ea904ba81bce41629436a800000000"/>
 		<Metadata name="DataProcessor.МаппингДанных.Form.ВыборОбъектаМетаданных.Form" id="9376b288-d475-410f-b150-641323890ac8.0" configVersion="33ff0aafcf9c6d40b95076d1e7c52f0e00000000"/>
-		<Metadata name="DataProcessor.МаппингДанных.Form.Форма" id="0702a050-1a0f-4224-ac99-294f07afb2e2" configVersion="28aacf6b3234c0418fb4a9b57dc23b8f00000000"/>
-		<Metadata name="DataProcessor.МаппингДанных.Form.Форма.Form" id="0702a050-1a0f-4224-ac99-294f07afb2e2.0" configVersion="9a7e6e47704f5e419c6f5b00dc05d75600000000"/>
-		<Metadata name="DataProcessor.МаппингДанных.ObjectModule" id="39090677-e7f0-45aa-a9d1-f8d1d908d0b0.0" configVersion="678162bf006b9940abb8ade8289b82de00000000"/>
+		<Metadata name="DataProcessor.МаппингДанных.Form.ТаблицаЗначений" id="0f49daf9-a716-4111-8421-02485c6cf525" configVersion="7d09af76b52e0c43aa954dc4875241e700000000"/>
+		<Metadata name="DataProcessor.МаппингДанных.Form.ТаблицаЗначений.Form" id="0f49daf9-a716-4111-8421-02485c6cf525.0" configVersion="00be6f1bbf8a10459a19654e75930fc900000000"/>
+		<Metadata name="DataProcessor.МаппингДанных.Form.Форма" id="0702a050-1a0f-4224-ac99-294f07afb2e2" configVersion="40e674ad5c91384ebcaa0d22d601b7f800000000"/>
+		<Metadata name="DataProcessor.МаппингДанных.Form.Форма.Form" id="0702a050-1a0f-4224-ac99-294f07afb2e2.0" configVersion="19ed177668939e43a0ddf97bd527046e00000000"/>
+		<Metadata name="DataProcessor.МаппингДанных.ObjectModule" id="39090677-e7f0-45aa-a9d1-f8d1d908d0b0.0" configVersion="4ecfb6e1f768744d99ef528df46fdb6100000000"/>
 		<Metadata name="DefinedType.Число15_3" id="f9b2350b-472d-4f4b-9805-85b5f7c87f57" configVersion="473e0dae2a5abb40aa3e0e90a1a9efff00000000"/>
-		<Metadata name="Document._ДемоЗаказыПокупателя" id="220eb244-7e8f-49bc-9b8d-a40e34b709a3" configVersion="66b866ee5618824f87b6f1e456a253f800000000">
+		<Metadata name="Document._ДемоЗаказыПокупателя" id="220eb244-7e8f-49bc-9b8d-a40e34b709a3" configVersion="f75a65103cf2314ab7e804c584ab6b3e00000000">
 			<Metadata name="Document._ДемоЗаказыПокупателя.TabularSection.Товары.Attribute.Номенклатура" id="3a8b93ed-cbad-4e2d-b28d-6786d472dff5"/>
 			<Metadata name="Document._ДемоЗаказыПокупателя.Attribute.Склад" id="5f45f335-d86e-4013-8b0f-b6069a014975"/>
 			<Metadata name="Document._ДемоЗаказыПокупателя.Attribute.Партнер" id="b0dfbc54-5ec6-4d15-b774-c2db82472d7e"/>
