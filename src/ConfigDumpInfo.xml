@@ -7,7 +7,7 @@
 		<Metadata name="Catalog._ДемоНоменклатура.ManagerModule" id="ae06d102-1307-4515-b0df-95baf6b619c0.3" configVersion="a3fc261a2bcc314683fb5b23c6558c3a00000000"/>
 		<Metadata name="Catalog._ДемоПартнеры" id="c89309e1-61ed-4bed-b399-255a936ec338" configVersion="e9eacea512c8154eb1fa4959bd908bce00000000"/>
 		<Metadata name="Catalog._ДемоСклады" id="7e043eb3-20ec-4670-a418-ca99c0d1894c" configVersion="56b3468858066e4e9fbca828fe6639b500000000"/>
-		<Metadata name="Configuration.ПомощникИнтеграции" id="f8e6e415-edf3-4df2-a0ab-60862255a493" configVersion="1993564b3175014c864d70b6dc12eecf00000000"/>
+		<Metadata name="Configuration.ПомощникИнтеграции" id="f8e6e415-edf3-4df2-a0ab-60862255a493" configVersion="f3f5b0d9d6c55144a749ee7714bbfb8000000000"/>
 		<Metadata name="DataProcessor.МаппингДанных" id="39090677-e7f0-45aa-a9d1-f8d1d908d0b0" configVersion="572c7784da7a6e4bbd7e1bc28347180000000000">
 			<Metadata name="DataProcessor.МаппингДанных.Attribute.ОбъектыМетаданных" id="a7b0f048-6e93-4129-9020-75fdaf2ac8a9"/>
 			<Metadata name="DataProcessor.МаппингДанных.Attribute.ДоступныеТипыДанных" id="ec61e6b0-f801-40e1-ad4f-52f1ece1c8d3"/>
